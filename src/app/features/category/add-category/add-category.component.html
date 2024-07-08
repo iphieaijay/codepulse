@@ -1,0 +1,24 @@
+<div class="container">
+    <h2 class="mt-3">New Category</h2>
+    <div class="col-md-3"></div>
+   <div class="col-md-6">
+        <form #addcategory="ngForm" (ngSubmit)="onSubmit()">
+            <div class="mt-2">
+                <div class="mt-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" [(ngModel)]=model.name name="categoryName" id="categoryName" placeholder="CategoryName"/>
+                    </div>
+            </div>
+            <div class="mt-2">
+                <div class="mt-3">
+                    <label class="form-label">Slug</label>
+                    <input type="text" class="form-control" [(ngModel)]=model.slug  name="slug" id="slug" placeholder="Url Handle"/>
+                    </div>
+            </div>
+            <div class="mt-3">
+                <button clas="btn btn-success" type="submit">Add</button>
+                        
+            </div>
+           </form>
+   </div>
+</div>
